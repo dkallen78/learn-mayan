@@ -1,0 +1,238 @@
+
+:root {
+  --letter: hsl(310, 75%, 50%);
+}
+
+body {
+  color: hsl(70, 50%, 15%);
+  background-color: hsl(190, 40%, 25%);
+}
+
+main {
+  background-color: hsl(70, 15%, 85%);
+  background-image: url("./resources/fondo.gif");
+  margin: auto;
+  width: 80vw;
+  border: .2rem solid hsl(70, 15%, 50%);
+  border-radius: .3rem;
+}
+
+#titleWrap {
+  display: grid;
+  grid-template-columns: 10rem 34vw 10rem;
+  justify-content: center;
+  margin: auto;
+  width: 70vw;
+}
+
+img {
+  margin: auto;
+  padding-top: 2rem;
+  height: 10rem;
+}
+
+#titleBox {
+  color: hsl(70, 10%, 95%);
+  background-color: hsl(310, 100%, 25%);
+  margin: 2rem auto 0;
+  padding: 1rem;
+  border: .2rem solid hsl(310, 50%, 25%);
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.hr {
+  margin: 2rem 10vw;
+  border: 1px solid hsl(310, 100%, 20%);
+}
+
+#content {
+  background-color: hsl(310, 5%, 95%);
+  margin: 0 auto 2rem;
+  width: 70vw;
+  overflow: hidden;
+  font-size: 1.6rem;
+  text-align: center;
+  border: .1rem solid hsl(190, 20%, 50%);
+  outline: .2rem solid hsl(190, 20%, 50%);
+  outline-offset: .1rem;
+}
+
+nav a {
+  margin-bottom: 1rem;
+}
+
+nav a:first-child {
+  float: left;
+  margin-left: 1rem;
+}
+
+nav a:last-child {
+  float: right;
+  margin-right: 1rem;
+}
+
+#content h1 {
+  padding: 2rem 0 0;
+}
+
+#content ul {
+  margin: auto;
+  width: 60%;
+  text-align: justify;
+}
+
+.leftAlign {
+  margin: 2rem 1rem;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+.leftAlign::first-line {
+  margin-left: 1rem;
+}
+
+#content h2 {
+  margin-bottom: 0;
+}
+
+#content table {
+  margin: auto;
+}
+
+.letters {
+  color: var(--letter);
+}
+
+.letters td {
+  padding: .5rem;
+}
+
+.wordPairs {
+  border: .2rem solid hsl(190, 20%, 50%);
+  border-radius: .2rem;
+  border-collapse: collapse;
+}
+
+.wordPairs th {
+  border-width: 0 0 .2rem 0;
+  border-style: solid;
+  border-color: hsl(190, 20%, 50%);
+}
+
+.wordPairs td {
+  padding: .1rem .5rem;
+}
+
+.wordPairs tr td:nth-child(odd) {
+  border-width: 0 0 0 .1rem;
+  border-style: solid;
+  border-color: hsl(190, 20%, 50%);
+  color: var(--letter);
+}
+
+.wordPairs tr td:nth-child(even) {
+  border-width: 0 .1rem 0 0;
+  border-style: solid;
+  border-color: hsl(190, 20%, 50%);
+}
+
+.pronouns {
+  margin-top: 1rem !important;
+  border-collapse: collapse;
+}
+
+.pronouns th {
+  border-width: 0 0 .2rem 0;
+  border-style: solid;
+  border-color: hsl(190, 20%, 50%);
+}
+
+.pronouns td {
+  padding: .1rem .5rem;
+}
+
+.pronouns td:not(:first-child) {
+  color: var(--letter);
+}
+
+.pronouns tr td:nth-child(2) {
+  border-width: 0 .2rem 0 .2rem;
+  border-style: solid;
+  border-color: hsl(190, 20%, 50%);
+}
+
+.conjugation {
+  margin-top: 1rem !important;
+  border-collapse: collapse;
+}
+
+.conjugation th {
+  padding: 0 .5rem;
+  border-width: 0 0 .2rem 0;
+  border-style: solid;
+  border-color: hsl(190, 20%, 50%);
+}
+
+.conjugation td:not(:first-child) {
+  color: var(--letter);
+}
+
+.speaker {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.dialogue {
+  text-align: left;
+  margin-left: 12%;
+}
+
+.dialogue input {
+  width: 70%;
+  font-size: 1.6rem;
+}
+
+.exercises {
+  text-align: left;
+}
+
+.exercises > li {
+  margin-top: 1rem;
+}
+
+.exercises ul {
+  margin-top: 1rem !important;
+  margin-left: 0 !important;
+  width: 50% !important;
+}
+
+.exercises ul span {
+  cursor: default;
+}
+
+.exercises li input {
+  float: right;
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.exercises li:last-child ul {
+  width: 96% !important;
+}
+
+.exercises .tableBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+
+.tableBox th {
+  text-align: center;
+}
+
+.tableBox td:first-child {
+  text-align: right;
+  width: 18rem;
+  cursor: default;
+}
